@@ -1,0 +1,19 @@
+<div class="container mt-5">
+  <div class="input-group flex-nowrap mb-3">
+    <input [(ngModel)]="inputLocation.name"  type="text" class="form-control" placeholder="Location-Name *" aria-label="Location-Name *" aria-describedby="addon-wrapping" >
+  </div>
+  <div class="input-group flex-nowrap mb-3">
+    <input [(ngModel)]="inputLocation.address"  type="text" class="form-control" placeholder="Adresse *" aria-label="Adresse *" aria-describedby="addon-wrapping" >
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <input [(ngModel)]="inputLocation.latitude"  type="text" class="form-control" placeholder="Breitengrad" aria-label="Breitengrad">
+    </div>
+    <div class="col-6">
+      <input [(ngModel)]="inputLocation.longitude"  type="text" class="form-control" placeholder="Längengrad" aria-label="Längengrad">
+    </div>
+  </div>
+  <div class="input-group flex-nowrap mt-3">
+    <input type="submit" (click)="insert()" value="Enter" class="form-control" placeholder="Enter" aria-describedby="addon-wrapping" >
+  </div>
+</div>

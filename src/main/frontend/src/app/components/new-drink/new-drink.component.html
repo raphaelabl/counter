@@ -1,0 +1,26 @@
+<div class="row">
+  <label class="form-label">Location</label>
+  <div class="col-10">
+    <input class="form-select"list="locations" name="locations" [(ngModel)]="selectedLocation">
+    <datalist id="locations">
+      <option *ngFor="let loc of locations">{{loc.id}} {{loc.name}}</option>
+    </datalist>
+  </div>
+  <div class="col-2">
+    <button type="button" class="btn btn-outline-danger waves-effect" (click)="selectedLocation = ''">X</button>
+  </div>
+
+
+  <label class="form-label mt-3">Benutzer</label>
+  <div class="col-10">
+    <input class="form-select" list="user" name="user" [(ngModel)]="selectedUser">
+    <datalist id="user">
+      <option *ngFor="let user of users">{{user.id}} {{user.shortName}}</option>
+    </datalist>
+  </div>
+  <div class="col-2">
+    <button type="button" class="btn btn-outline-danger waves-effect" (click)="selectedUser=''">X</button>
+  </div>
+</div>
+
+<input class="btn btn-primary mt-2" type="submit" value="Enter" (click)="insert()"/>
