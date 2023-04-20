@@ -12,6 +12,8 @@ env:
   REGISTRY: ghcr.io
 
 jobs:
+  permissions:
+    packages: write
   build-backend:
     name: build-backend-prod
     runs-on: ubuntu-latest
