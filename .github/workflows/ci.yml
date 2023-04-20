@@ -12,9 +12,9 @@ env:
   REGISTRY: ghcr.io
 
 jobs:
-  permissions:
-    packages: write
   build-backend:
+    permissions:
+      packages: write
     name: build-backend-prod
     runs-on: ubuntu-latest
     steps:
