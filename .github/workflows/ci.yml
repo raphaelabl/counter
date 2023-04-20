@@ -68,8 +68,8 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: ./src/main/demo-frontend
-          file: ./src/main/demo-frontend/Dockerfile
+          context: ./src/main/frontend
+          file: ./src/main/frontend/Dockerfile
           push: true
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_REPOSITORY }}-web:latest
           build-args: |
