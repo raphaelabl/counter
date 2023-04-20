@@ -1,0 +1,9 @@
+at/raphael/GreetingResource.class
+at/raphael/entity/Location.class
+at/raphael/boundary/LocationResource.class
+META-INF/panache-archive.marker
+at/raphael/dto/UserCountDto.class
+at/raphael/boundary/UserResource.class
+at/raphael/boundary/DrinkResource.class
+at/raphael/entity/Drink.class
+at/raphael/entity/User.class
